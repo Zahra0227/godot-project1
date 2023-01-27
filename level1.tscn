@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://assets/tilemap/slice27_27.png" type="Texture" id=1]
 [ext_resource path="res://assets/tilemap/slice03_03.png" type="Texture" id=2]
@@ -322,13 +322,13 @@ points = PoolVector2Array( 23, 20.816, 0, 20.816, 0, 0.56134, 23, 0.56134 )
 3/z_index = 0
 
 [sub_resource type="RectangleShape2D" id=13]
-extents = Vector2( 261.5, 19.5 )
+extents = Vector2( 373.5, 19.5 )
 
 [sub_resource type="RectangleShape2D" id=14]
 extents = Vector2( 95.7813, 15.5 )
 
 [sub_resource type="RectangleShape2D" id=15]
-extents = Vector2( 125.75, 19 )
+extents = Vector2( 130.5, 19 )
 
 [sub_resource type="StyleBoxFlat" id=16]
 
@@ -340,6 +340,21 @@ font_data = ExtResource( 12 )
 size = 25
 font_data = ExtResource( 12 )
 
+[sub_resource type="RectangleShape2D" id=29]
+extents = Vector2( 133.5, 10 )
+
+[sub_resource type="RectangleShape2D" id=30]
+extents = Vector2( 99.3125, 10 )
+
+[sub_resource type="RectangleShape2D" id=31]
+extents = Vector2( 199.438, 67.25 )
+
+[sub_resource type="RectangleShape2D" id=32]
+extents = Vector2( 67.125, 18 )
+
+[sub_resource type="RectangleShape2D" id=33]
+extents = Vector2( 579.313, 52 )
+
 [node name="level_1" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -348,10 +363,10 @@ show_collision = true
 collision_layer = 4
 collision_mask = 9
 format = 1
-tile_data = PoolIntArray( -1, 6, 0, 65535, 6, 0, 131071, 6, 0, 65552, 7, 0, 65555, 7, 0, 196607, 6, 0, 131089, 0, 0, 131090, 2, 0, 262143, 6, 0, 327679, 6, 0, 262150, 7, 0, 262154, 7, 0, 262156, 0, 0, 262157, 1, 0, 262158, 2, 0, 393215, 6, 0, 327687, 0, 0, 327688, 1, 0, 327689, 2, 0, 327696, 7, 0, 458751, 6, 0, 393220, 7, 0, 524287, 6, 0, 458769, 7, 0, 458775, 7, 0, 589823, 6, 0, 524288, 4, 0, 524289, 4, 0, 524290, 4, 0, 524291, 4, 0, 524292, 4, 0, 524293, 5, 0, 524306, 3, 0, 524307, 4, 0, 524308, 4, 0, 524309, 4, 0, 524310, 4, 0, 524311, 4, 0, 524312, 4, 0, 524313, 4, 0, 524314, 4, 0, 524315, 4, 0, 524316, 4, 0, 524317, 4, 0, 524318, 4, 0, 524319, 4, 0, 524320, 4, 0, 524321, 4, 0, 524322, 4, 0, 524323, 5, 0, 655359, 6, 0, 589824, 6, 0, 589825, 6, 0, 589826, 6, 0, 589827, 6, 0, 589828, 6, 0, 589829, 6, 0, 589842, 6, 0, 589843, 6, 0, 589844, 6, 0, 589845, 6, 0, 589846, 6, 0, 589847, 6, 0, 589848, 6, 0, 589849, 6, 0, 589850, 6, 0, 589851, 6, 0, 589852, 6, 0, 589853, 6, 0, 589854, 6, 0, 589855, 6, 0, 589856, 6, 0, 589857, 6, 0, 589858, 6, 0, 589859, 6, 0, 655378, 6, 0, 655379, 6, 0, 655380, 6, 0, 655381, 6, 0, 655382, 6, 0, 655383, 6, 0, 655384, 6, 0, 655385, 6, 0, 655386, 6, 0, 655387, 6, 0, 655388, 6, 0, 655389, 6, 0, 655390, 6, 0, 655391, 6, 0, 655392, 6, 0, 655393, 6, 0, 655394, 6, 0, 655395, 6, 0, 720914, 6, 0, 720915, 6, 0, 720916, 6, 0, 720917, 6, 0, 720918, 6, 0, 720919, 6, 0, 720920, 6, 0, 720921, 6, 0, 720922, 6, 0, 720923, 6, 0, 720924, 6, 0, 720925, 6, 0, 720926, 6, 0, 720927, 6, 0, 720928, 6, 0, 720929, 6, 0, 720930, 6, 0, 720931, 6, 0 )
+tile_data = PoolIntArray( -1, 6, 0, 65535, 6, 0, 131071, 6, 0, 65552, 7, 0, 65555, 7, 0, 196607, 6, 0, 131089, 0, 0, 131090, 2, 0, 262143, 6, 0, 327679, 6, 0, 262150, 7, 0, 262154, 7, 0, 262156, 0, 0, 262157, 1, 0, 262158, 2, 0, 393215, 6, 0, 327686, 0, 0, 327687, 0, 0, 327688, 0, 0, 327689, 2, 0, 327696, 7, 0, 458751, 6, 0, 393220, 7, 0, 524287, 6, 0, 458769, 7, 0, 458775, 7, 0, 589823, 6, 0, 524288, 4, 0, 524289, 4, 0, 524290, 4, 0, 524291, 4, 0, 524292, 4, 0, 524293, 5, 0, 524306, 3, 0, 524307, 4, 0, 524308, 4, 0, 524309, 4, 0, 524310, 4, 0, 524311, 4, 0, 524312, 4, 0, 524313, 4, 0, 524314, 4, 0, 524315, 4, 0, 524316, 4, 0, 524317, 4, 0, 524318, 4, 0, 524319, 4, 0, 524320, 4, 0, 524321, 4, 0, 524322, 4, 0, 524323, 5, 0, 655359, 6, 0, 589824, 6, 0, 589825, 6, 0, 589826, 6, 0, 589827, 6, 0, 589828, 6, 0, 589829, 6, 0, 589842, 6, 0, 589843, 6, 0, 589844, 6, 0, 589845, 6, 0, 589846, 6, 0, 589847, 6, 0, 589848, 6, 0, 589849, 6, 0, 589850, 6, 0, 589851, 6, 0, 589852, 6, 0, 589853, 6, 0, 589854, 6, 0, 589855, 6, 0, 589856, 6, 0, 589857, 6, 0, 589858, 6, 0, 589859, 6, 0, 655378, 6, 0, 655379, 6, 0, 655380, 6, 0, 655381, 6, 0, 655382, 6, 0, 655383, 6, 0, 655384, 6, 0, 655385, 6, 0, 655386, 6, 0, 655387, 6, 0, 655388, 6, 0, 655389, 6, 0, 655390, 6, 0, 655391, 6, 0, 655392, 6, 0, 655393, 6, 0, 655394, 6, 0, 655395, 6, 0, 720914, 6, 0, 720915, 6, 0, 720916, 6, 0, 720917, 6, 0, 720918, 6, 0, 720919, 6, 0, 720920, 6, 0, 720921, 6, 0, 720922, 6, 0, 720923, 6, 0, 720924, 6, 0, 720925, 6, 0, 720926, 6, 0, 720927, 6, 0, 720928, 6, 0, 720929, 6, 0, 720930, 6, 0, 720931, 6, 0 )
 
 [node name="player" parent="." instance=ExtResource( 5 )]
-position = Vector2( -327, -23 )
+position = Vector2( -322, -23 )
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2( 202, 305 )
@@ -380,11 +395,8 @@ position = Vector2( 781, 647 )
 collision_layer = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gameover_zone"]
-position = Vector2( -125.5, -9.5 )
+position = Vector2( -13.5, -9.5 )
 shape = SubResource( 13 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="gameover_zone2" type="Area2D" parent="."]
 position = Vector2( 2710, 770 )
@@ -393,9 +405,6 @@ collision_layer = 16
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gameover_zone2"]
 position = Vector2( -125.5, -9.5 )
 shape = SubResource( 13 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="heart" parent="." instance=ExtResource( 8 )]
 position = Vector2( 493, 296 )
@@ -421,7 +430,7 @@ position = Vector2( 1137, 108 )
 [node name="KinematicBody2D2" type="KinematicBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D2"]
-position = Vector2( 2096, 340 )
+position = Vector2( 2080, 336 )
 shape = SubResource( 14 )
 one_way_collision = true
 
@@ -429,18 +438,12 @@ one_way_collision = true
 position = Vector2( 2115, 160 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D3"]
-position = Vector2( 1, -10 )
+position = Vector2( 2.5, -10 )
 shape = SubResource( 15 )
 one_way_collision = true
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Node2D" type="Node2D" parent="."]
 z_index = -1
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Sprite" type="Sprite" parent="Node2D"]
 position = Vector2( 1446, 491 )
@@ -449,9 +452,6 @@ texture = ExtResource( 10 )
 
 [node name="Node2D8" type="Node2D" parent="."]
 z_index = -1
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Sprite" type="Sprite" parent="Node2D8"]
 position = Vector2( 945, 236 )
@@ -460,9 +460,6 @@ texture = ExtResource( 10 )
 
 [node name="Node2D9" type="Node2D" parent="."]
 z_index = -1
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Sprite" type="Sprite" parent="Node2D9"]
 position = Vector2( 1939, 489 )
@@ -471,9 +468,6 @@ texture = ExtResource( 10 )
 
 [node name="Node2D2" type="Node2D" parent="."]
 z_index = -1
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Sprite" type="Sprite" parent="Node2D2"]
 position = Vector2( 1598, 490 )
@@ -482,9 +476,6 @@ texture = ExtResource( 10 )
 
 [node name="Node2D3" type="Node2D" parent="."]
 z_index = -1
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Sprite" type="Sprite" parent="Node2D3"]
 position = Vector2( 1205, 427 )
@@ -493,9 +484,6 @@ texture = ExtResource( 11 )
 
 [node name="Node2D4" type="Node2D" parent="."]
 z_index = -1
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Sprite" type="Sprite" parent="Node2D4"]
 position = Vector2( 1864, 495 )
@@ -504,9 +492,6 @@ texture = ExtResource( 9 )
 
 [node name="Node2D5" type="Node2D" parent="."]
 z_index = -1
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Sprite" type="Sprite" parent="Node2D5"]
 position = Vector2( 560, 303 )
@@ -515,9 +500,6 @@ texture = ExtResource( 9 )
 
 [node name="Node2D6" type="Node2D" parent="."]
 z_index = -1
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Sprite" type="Sprite" parent="Node2D6"]
 position = Vector2( 2199, 109 )
@@ -526,9 +508,6 @@ texture = ExtResource( 9 )
 
 [node name="Node2D7" type="Node2D" parent="."]
 z_index = -1
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Sprite" type="Sprite" parent="Node2D7"]
 position = Vector2( 140, 495 )
@@ -578,7 +557,29 @@ margin_right = 346.0
 margin_bottom = 76.0
 
 [node name="enemy1" parent="." instance=ExtResource( 15 )]
-position = Vector2( 598, 276 )
+position = Vector2( 599, 275 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+position = Vector2( 516.75, 329 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+shape = SubResource( 29 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 351.25, -64 )
+shape = SubResource( 30 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( -324.188, 247.25 )
+shape = SubResource( 31 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 638.25, -184 )
+shape = SubResource( 32 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 1213.94, 234 )
+shape = SubResource( 33 )
 
 [connection signal="body_entered" from="gameover_zone" to="player" method="_on_gameover_zone_body_entered"]
 [connection signal="body_entered" from="gameover_zone2" to="player" method="_on_gameover_zone_body_entered"]
